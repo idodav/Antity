@@ -1,0 +1,20 @@
+<!-- Generated template for the WorkPlacesComponent component -->
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      My work places
+    </ion-title>    
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list *ngFor="let place of this.workPlaces">
+    <ion-item>
+      <button ion-button round full (click)="navToWorkPlace($event)">{{place}}</button>
+    </ion-item>
+  </ion-list>
+  <button ion-button round full>New workplace</button>
+</ion-content>

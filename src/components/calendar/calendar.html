@@ -1,0 +1,36 @@
+<!-- Generated template for the CalendarComponent component -->
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Calendar
+    </ion-title>    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full color="default">
+      {{fulldate}}
+  </button>
+  <div class="scroll-horiz">
+    <div class="box">
+      <!-- header -->
+      
+      <div id="calHead">
+          <ion-list no-lines>
+            <ion-item *ngFor="let day of daysOfWeek" class="headerDay">
+              <button ion-button class="headerDay">{{day}}</button>
+            </ion-item>
+          </ion-list>
+      </div>
+      <!-- body -->
+      
+      <div id="calBody">
+          body
+      </div>
+    </div>
+  </div>
+</ion-content>

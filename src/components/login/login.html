@@ -1,0 +1,21 @@
+<!-- Generated template for the LoginComponent component -->
+<ion-header>
+  <navbar title="Login"></navbar>
+</ion-header>
+<ion-content>
+  <div>
+    <ion-list no-lines>
+      <ion-item>
+          <ion-label color="primary" floating>Username</ion-label>
+          <ion-input [(ngModel)]="loginInfo.user"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label color="primary" floating >Password</ion-label>
+          <ion-input type="password" [(ngModel)]="loginInfo.pass"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button round (click)="login($event)" class="login">Login</button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
